@@ -1,17 +1,32 @@
 /*header*/
 header {
-    background-color: #2C5485;
-    padding: 10px 0;
-    margin: 0;
+  background-color: #3E74B6;
+  padding: 0px 0;
+  margin: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
   width: calc(100% + 40px);
+  height: 118px;
   margin-left: -20px;
   box-sizing: border-box;
 }
 
-/* nav styles */
+/* navigation*/
+.nav-links .school-logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-links .school-logo a img {
+  width: 100px;
+  height: 100px;
+}
+
+.school-name { 
+  font-size: 1.3rem;
+}
+
 .nav-links {
   width: 100%;
   display: none;
@@ -20,34 +35,40 @@ header {
 }
 
 .nav-links a {
-  display: block;
+  display: inline-block;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 20px;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: normal;
   color: #ffffff;
+  filter: none;
+  transition: color 0.3s ease-in filter 0.3s ease-in;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  color: #ECAA3A;
+  filter: invert(60%) sepia(90%) saturate(900%) hue-rotate(15deg) brightness(155%) contrast(92%);
   transition: 0.3s;
 }
 
+.nav-links .school-logo,
+.nav-links .school-logo a,
+.nav-links .school-logo a img,
+.nav-links .school-logo .school-name {
+  filter: none;
+}
 
-/* Respect users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .nav-links a img {
-    transition: none;
-    will-change: auto;
-    transform: none;
-  }
+.nav-links a img {
+  vertical-align: middle;
+  margin-right: 0.75rem;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -56,14 +77,9 @@ header {
     background: none;
   }
 
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  /* push the last link (Contact Us) to the far right */
+  /*contact us menu*/
   .nav-links a:last-child {
     margin-left: auto;
-    color:#ECAA3A;
+    color:#ffffff;
   }
 }
