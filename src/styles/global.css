@@ -1,7 +1,6 @@
 /*header*/
 header {
-  background-color: #3E74B6;
-  padding: 0px 0;
+  background-color: #3e74b6;
   margin: 0;
   position: sticky;
   top: 0;
@@ -10,6 +9,10 @@ header {
   height: 118px;
   margin-left: -20px;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
 }
 
 /* navigation*/
@@ -23,8 +26,9 @@ header {
   height: 100px;
 }
 
-.school-name { 
-  font-size: 1.3rem;
+.school-name {
+  font-size: 1.4rem;
+  font-weight: 650;
 }
 
 .nav-links {
@@ -48,7 +52,8 @@ header {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  filter: invert(60%) sepia(90%) saturate(900%) hue-rotate(15deg) brightness(155%) contrast(92%);
+  filter: invert(60%) sepia(90%) saturate(900%) hue-rotate(15deg)
+    brightness(155%) contrast(92%);
   transition: 0.3s;
 }
 
@@ -67,6 +72,11 @@ header {
   height: 30px;
 }
 
+.contact {
+  display: inline;
+  padding-left: 85px;
+}
+
 @media screen and (min-width: 636px) {
   .nav-links {
     display: flex;
@@ -76,10 +86,73 @@ header {
     width: auto;
     background: none;
   }
+}
 
-  /*contact us menu*/
-  .nav-links a:last-child {
-    margin-left: auto;
-    color:#ffffff;
+/*dropdown*/
+.nav-links .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links .dropdown-button {
+  padding: 10px;
+  border: none;
+}
+
+.nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.nav-links .dropdown-content a {
+  color: black;
+  background-color: #f0faff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+  /*animation starts here*/
+  opacity: 0;
+  transform: translateX(60px);
+  animation: translateX 300ms ease-in-out;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+}
+
+.nav-links .dropdown-content a:hover {
+  background-color: #d6f1ff;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links .dropdown:hover .dropdown-content a {
+  animation-name: translateX;
+}
+
+.nav-links .dropdown:hover .dropdown-content a:nth-child(1) {
+  animation-delay: 0ms;
+}
+.nav-links .dropdown:hover .dropdown-content a:nth-child(2) {
+  animation-delay: 60ms;
+}
+.nav-links .dropdown:hover .dropdown-content a:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
