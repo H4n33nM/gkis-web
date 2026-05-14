@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0 20px 20px;
+  background-color: #ffffff;
+}
+
 /*header*/
 header {
   background-color: #3e74b6;
@@ -89,7 +95,7 @@ body {
 }
 
 /*dropdown*/
-.nav-links .dropdown {
+.nav-links .dropdown-p1 {
   position: relative;
   display: inline-block;
 }
@@ -125,21 +131,21 @@ body {
   background-color: #d6f1ff;
 }
 
-.nav-links .dropdown:hover .dropdown-content {
+.nav-links .dropdown-p1:hover .dropdown-content {
   display: block;
 }
 
-.nav-links .dropdown:hover .dropdown-content a {
+.nav-links .dropdown-p1:hover .dropdown-content a {
   animation-name: translateX;
 }
 
-.nav-links .dropdown:hover .dropdown-content a:nth-child(1) {
+.nav-links .dropdown-p1:hover .dropdown-content a:nth-child(1) {
   animation-delay: 0ms;
 }
-.nav-links .dropdown:hover .dropdown-content a:nth-child(2) {
+.nav-links .dropdown-p1:hover .dropdown-content a:nth-child(2) {
   animation-delay: 60ms;
 }
-.nav-links .dropdown:hover .dropdown-content a:nth-child(3) {
+.nav-links .dropdown-p1:hover .dropdown-content a:nth-child(3) {
   animation-delay: 120ms;
 }
 
