@@ -34,7 +34,7 @@ body {
 }
 
 .school-name {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 650;
 }
 
@@ -81,7 +81,7 @@ body {
 
 .contact {
   display: inline;
-  padding-left: 85px;
+  padding-left: 125px;
 }
 
 @media screen and (min-width: 636px) {
@@ -99,6 +99,7 @@ body {
 .nav-links .dropdown-section {
   position: relative;
   display: inline-block;
+  padding-left: 30px;
 }
 
 .nav-links .dropdown-button {
@@ -146,10 +147,19 @@ body {
   --delay: 0ms;
 }
 .dropdown-content .dropdown-item:nth-child(2) {
-  --delay: 60ms;
+  --delay: 30ms;
 }
 .dropdown-content .dropdown-item:nth-child(3) {
+  --delay: 60ms;
+}
+.dropdown-content .dropdown-item:nth-child(4) {
+  --delay: 90ms;
+}
+.dropdown-content .dropdown-item:nth-child(5) {
   --delay: 120ms;
+}
+.dropdown-content .dropdown-item:nth-child(6) {
+  --delay: 150ms;
 }
 
 @keyframes translateX {
