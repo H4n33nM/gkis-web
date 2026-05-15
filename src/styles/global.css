@@ -175,3 +175,71 @@ body {
     transform: translateX(0px);
   }
 }
+
+/*footer*/
+.footer-section {
+  background-color: #3e74b6;
+  color: #ffffff;
+  width: calc(100% + 40px);
+  padding: 40px 20px;
+  margin-left: -20px;
+  box-sizing: border-box;
+}
+
+.contact-us li {
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+.contact-details {
+  list-style: none;
+  padding-left: 20px;
+}
+
+#contact-icon::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/header-icons/Contact.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+#map-icon::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/header-icons/Map.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.social-icons {
+  display: flex;
+  list-style-type: none;
+}
+
+.social-icons img {
+  width: 60px;
+  height: 60px;
+  padding-right: 40px;
+}
+
+.social-icons a {
+  filter: none;
+  transition: color 0.3s ease-in filter 0.3s ease-in;
+}
+
+.social-icons a :hover,
+.social-icons a :focus {
+  filter: invert(60%) sepia(90%) saturate(900%) hue-rotate(15deg)
+    brightness(155%) contrast(92%);
+  transition: 0.3s;
+}
