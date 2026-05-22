@@ -232,14 +232,35 @@ body {
   padding-right: 40px;
 }
 
-.social-icons a {
+.social-icons #facebook {
   filter: none;
-  transition: color 0.3s ease-in filter 0.3s ease-in;
+  transition: filter 0.3s ease;
 }
 
-.social-icons a :hover,
-.social-icons a :focus {
-  filter: invert(60%) sepia(90%) saturate(900%) hue-rotate(15deg)
-    brightness(155%) contrast(92%);
-  transition: 0.3s;
+.social-icons #instagram {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+.social-icons #youtube {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+.social-icons #facebook:hover,
+.social-icons #facebook:focus {
+  filter: invert(63%) sepia(90%) saturate(300%) hue-rotate(150deg)
+    brightness(200%) contrast(94%);
+}
+
+.social-icons #instagram:hover,
+.social-icons #instagram:focus {
+  filter: invert(63%) sepia(90%) saturate(300%) hue-rotate(300deg)
+    brightness(200%) contrast(94%);
+}
+
+.social-icons #youtube:hover,
+.social-icons #youtube:focus {
+  filter: invert(63%) sepia(90%) saturate(1000%) hue-rotate(-40deg)
+    brightness(110%) contrast(94%);
 }
