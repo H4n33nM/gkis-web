@@ -178,6 +178,9 @@ body {
 
 /*footer*/
 .footer-section {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
   background-color: #3e74b6;
   color: #ffffff;
   width: calc(100% + 40px);
@@ -263,4 +266,21 @@ body {
 .social-icons #youtube:focus {
   filter: invert(63%) sepia(90%) saturate(1000%) hue-rotate(-40deg)
     brightness(110%) contrast(94%);
+}
+
+.language-options {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+#options {
+  padding-top: 25px;
+}
+
+#options select {
+  width: 200px;
+  height: 40px;
+  background-color: #2c5485;
 }
