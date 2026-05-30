@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0 20px 20px;
+  font-family: "Nunito", sans-serif;
   background-color: #ffffff;
 }
 
@@ -12,14 +13,10 @@ header {
   top: 0;
   z-index: 1000;
   width: calc(100% + 40px);
-  height: 118px;
   margin-left: -20px;
+  height: 118px;
   box-sizing: border-box;
   box-shadow: 0px 2px 15px 0px #214674ff;
-}
-
-body {
-  font-family: "Nunito", sans-serif;
 }
 
 /* navigation*/
@@ -96,6 +93,11 @@ body {
 }
 
 /*dropdown*/
+.nav-links .dropdown {
+  display: flex;
+  flex-direction: row;
+}
+
 .nav-links .dropdown-section {
   position: relative;
   display: inline-block;
@@ -178,6 +180,8 @@ body {
 
 /*footer*/
 .footer-section {
+  position: relative;
+  top: 180px;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
@@ -272,7 +276,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding-top: 30px;
 }
 
 #options {
