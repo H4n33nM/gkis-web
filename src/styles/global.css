@@ -181,7 +181,7 @@ header {
 /*footer*/
 .footer-section {
   position: relative;
-  top: 180px;
+  top: 190px;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
@@ -286,4 +286,37 @@ header {
   width: 200px;
   height: 40px;
   background-color: #2c5485;
+}
+
+/*responsive dimensions*/
+@media (max-width: 600px) {
+  .school-name {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 650;
+  }
+}
+
+@media (min-width: 600px) {
+  footer {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    background-color: orangered;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    background-color: red;
+  }
 }
