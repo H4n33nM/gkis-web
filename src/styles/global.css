@@ -14,7 +14,6 @@ header {
   z-index: 1000;
   width: calc(100% + 40px);
   margin-left: -20px;
-  height: 118px;
   box-sizing: border-box;
   box-shadow: 0px 2px 15px 0px #214674ff;
 }
@@ -22,9 +21,11 @@ header {
 /* navigation*/
 .nav-links {
   width: auto;
-  display: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .nav-links .school-logo a {
@@ -33,12 +34,23 @@ header {
   text-decoration: none;
 }
 .nav-links .school-logo a img {
-  width: 100px;
-  height: 100px;
+  width: 95px;
+  height: 95px;
+}
+
+.school-logo {
+  flex: 0 1 auto;
+}
+
+.nav-links .dropdown {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }
 
 .school-name {
-  font-size: 1.15em;
+  font-size: 1.26em;
   font-weight: 650;
   white-space: nowrap;
 }
@@ -48,7 +60,7 @@ header {
   text-align: center;
   padding: 15px 20px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
   color: #ffffff;
   filter: none;
@@ -82,22 +94,10 @@ header {
   flex-direction: row;
   align-items: center;
   white-space: nowrap;
-  padding-left: 49.13px;
-}
-
-@media screen and (min-width: 636px) {
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    position: static;
-    width: auto;
-    background: none;
-  }
+  padding-left: 55.49px;
 }
 
 /*dropdown*/
-
 .nav-links .dropdown {
   display: flex;
   flex-direction: row;
@@ -132,7 +132,7 @@ header {
 }
 
 .nav-links .dropdown-content a {
-  font-size: 17.25px;
+  font-size: 17px;
   white-space: nowrap;
   color: #2c5485;
   background-color: #f0faff;
@@ -257,7 +257,7 @@ header {
 .social-icons img {
   width: 50px;
   height: 50px;
-  padding-top: 5px;;
+  padding-top: 5px;
   padding-right: 40px;
 }
 
@@ -301,7 +301,7 @@ header {
 }
 
 #options {
-  padding-top: 25px;
+  padding-top: 16px;
 }
 
 #options select {
@@ -314,12 +314,17 @@ header {
   background-color: #2c5485;
 }
 
-.quick-links, .language-options {
+.quick-links,
+.language-options {
   padding-left: 250px;
 }
 
 .quick-links ul {
   line-height: 28px;
+}
+
+.footer-section span {
+  padding-top: 20px;
 }
 
 /*responsive dimensions*/
