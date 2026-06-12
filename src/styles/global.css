@@ -329,14 +329,20 @@ header {
 
 /*responsive dimensions*/
 @media (max-width: 600px) {
+  .nav-links .dropdown {
+    display: none;
+  }
   footer {
-    background-color: yellowgreen;
+    background-color: yellow;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 768px) {
+  .nav-links .dropdown {
+    display: none;
+  }
   footer {
-    background-color: yellow;
+    background-color: blue;
   }
 }
 
