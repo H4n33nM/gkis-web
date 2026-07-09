@@ -333,7 +333,7 @@ header {
     display: none;
   }
   footer {
-    background-color: yellow;
+    background-color: yellowgreen;
   }
 }
 
@@ -342,23 +342,32 @@ header {
     display: none;
   }
   footer {
-    background-color: blue;
+    background-color: yellow;
   }
 }
 
 @media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
   footer {
     background-color: orange;
   }
 }
 
 @media (min-width: 992px) {
+  .hamburger-menu {
+    display: none;
+  }
   footer {
     background-color: orangered;
   }
 }
 
 @media (min-width: 1200px) {
+  .hamburger-menu {
+    display: none;
+  }
   footer {
     background-color: red;
   }
