@@ -342,6 +342,9 @@ header {
 }
 
 @media (max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+  }
   .nav-links .dropdown {
     display: none;
   }
@@ -351,6 +354,9 @@ header {
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
   .nav-links .dropdown {
     display: none;
   }
@@ -366,9 +372,6 @@ header {
   footer {
     background-color: orange;
   }
-  .nav-links .dropdown {
-    flex-wrap: wrap;
-  }
 }
 
 @media (min-width: 992px) {
@@ -378,9 +381,6 @@ header {
   footer {
     background-color: orangered;
   }
-  .nav-links .dropdown {
-    flex-wrap: wrap;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -389,8 +389,5 @@ header {
   }
   footer {
     background-color: red;
-  }
-  .nav-links .dropdown {
-    flex-wrap: wrap;
   }
 }
