@@ -22,7 +22,7 @@ header {
 .nav-links {
   width: auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -45,14 +45,14 @@ header {
 .nav-links .dropdown {
   flex: 1 1 auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0.25rem;
 }
 
 .school-name {
   font-size: 1.26em;
   font-weight: 650;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .nav-links a {
@@ -94,7 +94,6 @@ header {
   flex-direction: row;
   align-items: center;
   white-space: nowrap;
-  padding-left: 55.49px;
 }
 
 /*dropdown*/
@@ -200,8 +199,8 @@ header {
   position: relative;
   top: 190px;
   display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
   background-color: #3e74b6;
   color: #ffffff;
   width: calc(100% + 40px);
@@ -316,7 +315,7 @@ header {
 
 .quick-links,
 .language-options {
-  padding-left: 250px;
+  padding-left: 0;
 }
 
 .quick-links ul {
@@ -337,10 +336,6 @@ header {
   padding: 5px 10px;
 }
 
-:has(.hamburger-menu[aria-expanded="true"]) .dropdown {
-  display: unset;
-}
-
 @media (max-width: 600px) {
   .hamburger-menu {
     display: block;
@@ -350,6 +345,7 @@ header {
   }
   footer {
     background-color: yellowgreen;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -362,6 +358,7 @@ header {
   }
   footer {
     background-color: yellow;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -389,5 +386,18 @@ header {
   }
   footer {
     background-color: red;
+  }
+}
+
+.menu-open .nav-links .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .menu-open .nav-links .dropdown {
+    display: flex;
+    flex-direction: row;
   }
 }
