@@ -327,21 +327,15 @@ header {
 }
 
 /*responsive dimensions*/
-.hamburger-menu {
-  background-color: #0d0950;
-  border: none;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 5px 10px;
-}
-
 @media (max-width: 600px) {
   .hamburger-menu {
     display: block;
   }
   .nav-links .dropdown {
     display: none;
+  }
+  header {
+    position: absolute;
   }
   footer {
     background-color: yellowgreen;
@@ -355,6 +349,9 @@ header {
   }
   .nav-links .dropdown {
     display: none;
+  }
+  header {
+    position: absolute;
   }
   footer {
     background-color: yellow;
