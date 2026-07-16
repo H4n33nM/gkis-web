@@ -331,6 +331,12 @@ header {
   .hamburger-menu {
     display: flex;
   }
+  .nav-links {
+    display: block;
+  }
+  .nav-links .school-logo {
+    padding-left: 90px;
+  }
   .nav-links .dropdown {
     display: none;
   }
@@ -346,6 +352,12 @@ header {
 @media (min-width: 600px) and (max-width: 768px) {
   .hamburger-menu {
     display: flex;
+  }
+  .nav-links {
+    display: block;
+  }
+  .nav-links .school-logo {
+    padding-left: 145px;
   }
   .nav-links .dropdown {
     display: none;
