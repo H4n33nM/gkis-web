@@ -327,9 +327,9 @@ header {
 }
 
 /*responsive dimensions*/
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .hamburger-menu {
-    display: block;
+    display: flex;
   }
   .nav-links .dropdown {
     display: none;
@@ -345,7 +345,7 @@ header {
 
 @media (min-width: 600px) and (max-width: 768px) {
   .hamburger-menu {
-    display: block;
+    display: flex;
   }
   .nav-links .dropdown {
     display: none;
@@ -360,27 +360,18 @@ header {
 }
 
 @media (min-width: 768px) {
-  .hamburger-menu {
-    display: none;
-  }
   footer {
     background-color: orange;
   }
 }
 
 @media (min-width: 992px) {
-  .hamburger-menu {
-    display: none;
-  }
   footer {
     background-color: orangered;
   }
 }
 
 @media (min-width: 1200px) {
-  .hamburger-menu {
-    display: none;
-  }
   footer {
     background-color: red;
   }
