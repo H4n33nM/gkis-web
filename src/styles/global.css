@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0 20px 20px;
+  padding: 0;
   font-family: "Nunito", sans-serif;
   background-color: #ffffff;
 }
@@ -12,8 +12,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: calc(100% + 40px);
-  margin-left: -20px;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box;
   box-shadow: 0px 2px 15px 0px #214674ff;
 }
@@ -203,9 +203,9 @@ header {
   gap: 40px;
   background-color: #3e74b6;
   color: #ffffff;
-  width: calc(100% + 40px);
+  width: 100%;
+  margin: 0;
   padding: 30px 20px;
-  margin-left: -20px;
   box-sizing: border-box;
 }
 
@@ -368,24 +368,6 @@ header {
   }
   .footer-section {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 768px) {
-  footer {
-    background-color: orange;
-  }
-}
-
-@media (min-width: 992px) {
-  footer {
-    background-color: orangered;
-  }
-}
-
-@media (min-width: 1200px) {
-  footer {
-    background-color: red;
   }
 }
 
