@@ -332,10 +332,11 @@ header {
     display: flex;
   }
   .nav-links {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   .nav-links .school-logo {
-    padding-left: 90px;
+    padding-left: 0;
   }
   .nav-links .dropdown {
     display: none;
@@ -343,8 +344,7 @@ header {
   header {
     position: absolute;
   }
-  footer {
-    background-color: yellowgreen;
+  .footer-section {
     grid-template-columns: 1fr;
   }
 }
@@ -354,10 +354,11 @@ header {
     display: flex;
   }
   .nav-links {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   .nav-links .school-logo {
-    padding-left: 145px;
+    padding-left: 0;
   }
   .nav-links .dropdown {
     display: none;
@@ -365,8 +366,7 @@ header {
   header {
     position: absolute;
   }
-  footer {
-    background-color: yellow;
+  .footer-section {
     grid-template-columns: 1fr;
   }
 }
