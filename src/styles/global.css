@@ -213,6 +213,10 @@ header {
   font-size: 22px;
 }
 
+.footer-section span {
+  padding: 10px 0px;
+}
+
 .contact-us li {
   font-size: 18px;
   font-weight: 300;
@@ -351,6 +355,9 @@ header {
     justify-content: space-between;
     padding: 12px 65px;
   }
+  main {
+    margin-top: 200px;
+  }
   .footer-section {
     grid-template-columns: 1fr;
   }
@@ -373,6 +380,10 @@ header {
 
   header {
     position: absolute;
+  }
+
+  main {
+    margin-top: 150px;
   }
   .footer-section {
     grid-template-columns: 1fr;
