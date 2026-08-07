@@ -5,6 +5,10 @@ body {
   background-color: #ffffff;
 }
 
+main {
+  margin-top: 0px;
+}
+
 /*header*/
 header {
   background-color: #3e74b6;
@@ -331,6 +335,12 @@ header {
 }
 
 /*responsive dimensions*/
+.menu-open .nav-links .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
 @media (max-width: 599px) {
   .hamburger-menu {
     display: flex;
@@ -356,7 +366,7 @@ header {
     padding: 12px 65px;
   }
   main {
-    margin-top: 200px;
+    margin-top: 145px;
   }
   .footer-section {
     grid-template-columns: 1fr;
@@ -383,17 +393,11 @@ header {
   }
 
   main {
-    margin-top: 150px;
+    margin-top: 120px;
   }
   .footer-section {
     grid-template-columns: 1fr;
   }
-}
-
-.menu-open .nav-links .dropdown {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
 }
 
 @media (min-width: 768px) {
