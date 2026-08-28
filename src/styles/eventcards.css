@@ -1,0 +1,39 @@
+.event-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 3px 65px;
+}
+
+.e-card-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 150px;
+  width: 450px;
+  height: 220px;
+  background-image: url("src/assets/test-images/circus.png");
+  border-radius: 20px;
+  transition: 0.9 ease-in-out;
+}
+
+.e-card-one h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+.e-card-one:hover {
+  background-image:
+    radial-gradient(#00000000 30%, #fff280c5),
+    url("src/assets/test-images/circus.png");
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -2,6 +2,7 @@
 import Layout from "../layouts/MainLayout.astro";
 import ImageSlider from "../components/ImageSlider.astro";
 import Cards from "../components/Cards.astro";
+import EventCards from "../components/EventCards.astro";
 import "../styles/homepage.css";
 ---
 
@@ -10,15 +11,16 @@ import "../styles/homepage.css";
   <!--cards -->
   <Cards />
   <div class="heading">
-    <img src="/src/assets/heading-icons/Events.png">
+    <img src="/src/assets/heading-icons/Events.png" />
     <h2>Our Memorable Moments</h2>
   </div>
+  <EventCards />
   <div class="heading">
-    <img src="/src/assets/heading-icons/News.png">
+    <img src="/src/assets/heading-icons/News.png" />
     <h2>The Latest News</h2>
   </div>
   <div class="heading">
-    <img src="/src/assets/heading-icons/Backpack.png">
+    <img src="/src/assets/heading-icons/Backpack.png" />
     <h2>Our Students' Curriculum</h2>
   </div>
 </Layout>
