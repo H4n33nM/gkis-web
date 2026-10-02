@@ -28,12 +28,50 @@
     url("src/assets/test-images/circus.png");
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+.e-card-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-left: 55px;
+  width: 450px;
+  height: 220px;
+  background-image: url("src/assets/test-images/nationalDay.png");
+  border-radius: 20px;
+  transition: 0.9 ease-in-out;
+}
 
-  to {
-    opacity: 1;
-  }
+.e-card-two h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+.e-card-two:hover {
+  background-image:
+    radial-gradient(#00000000 30%, #8bff80c5),
+    url("src/assets/test-images/nationalDay.png");
+}
+
+.e-card-three {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-left: 55px;
+  width: 450px;
+  height: 220px;
+  background-image: url("src/assets/test-images/worldDiabetes.png");
+  border-radius: 20px;
+  transition: 0.9 ease-in-out;
+}
+
+.e-card-three h1 {
+  font-size: 2.5em;
+  color: #000000;
+}
+
+.e-card-three:hover {
+  background-image:
+    radial-gradient(#00000000 30%, #6167dfc5),
+    url("src/assets/test-images/worldDiabetes.png");
 }
